@@ -13,9 +13,12 @@ def foo():
     (_, _), (x_test, y_test) = keras.datasets.mnist.load_data()
     x_test = x_test.astype("float32") / 255
     x_test = np.expand_dims(x_test, -1)
-
+    
+    res = []
     for i in range(8):
         pred = model.predict(np.array([x_test[i]]))
         print(f"prediction: {convert_prediction(pred.tolist())}")
+        res.append(convert_prediction(pred.tolist()))
 
+    return res
 
