@@ -23,6 +23,11 @@ pyinstaller hello.py
 ## Problem
 * It is not working for Mac currently
 * it is not stable, does not work for some version of 3rd party library
+```
+272050 WARNING: codesign command (['codesign', '-s', '-', '--force', '--all-architectures', '--timestamp', '/Users/Rosemary/Library/Application Support/pyinstaller/bincache00_py38_64bit/x86_64/adhoc/no-entitlements/pandas/_libs/tslibs/conversion.cpython-38-darwin.so']) failed with error code 1!
+stdout: ''
+stderr: '/Users/Rosemary/Library/Application Support/pyinstaller/bincache00_py38_64bit/x86_64/adhoc/no-entitlements/pandas/_libs/tslibs/conversion.cpython-38-darwin.so: invalid or unsupported format for signature\n'
+```
 
 # with docker (on linux)
 ```
