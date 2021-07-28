@@ -1,0 +1,4 @@
+pyinstaller
+numpy
+tensorflow==2.2.0rc
+
