@@ -77,5 +77,43 @@ python3 -m http.server 8888
 python3 -m virtualenv venv
 ```
 
+# python version
+* In specific version of python, the old version of the library does not support
+```
+ERROR: Could not find a version that satisfies the requirement tensorflow==1.15.5 (from versions: 2.2.0rc3, 2.2.0rc4, 2.2.0, 2.2.2, 2.2.3, 2.3.0rc0, 2.3.0rc1, 2.3.0rc2, 2.3.0, 2.3.2, 2.3.3, 2.4.0rc1, 2.4.0rc2, 2.4.0rc3, 2.4.0rc4, 2.4.0, 2.4.1, 2.4.2, 2.5.0rc0, 2.5.0rc1, 2.5.0rc2, 2.5.0rc3, 2.5.0, 2.6.0rc0, 2.6.0rc1)
+ERROR: No matching distribution found for tensorflow==1.15.5
+```
+
+## Install mutiple version of python3
+* we can also use `pyenv` or `conda` to do the same thing
+ 
+### On Mac
+* installation
+```
+brew install python@3.7
+brew install python@3.8
+```
+
+* `sudo vim ~/.bash_profile` (need to reopen the console)
+```
+alias python3.7="/usr/local/opt/python@3.7/bin/python3.7"
+alias python3.8="/usr/local/opt/python@3.8/bin/python3.8"
+
+alias pip3.7="/usr/local/opt/python@3.7/bin/pip3.7"
+alias pip3.8="/usr/local/opt/python@3.8/bin/pip3.8"
+```
+
+* virtual environment
+
+
+# `Too many open files in system` issue
+* on mac, we can
+```
+launchctl limit maxfiles
+sudo launchctl limit maxfiles 65536 200000
+```
+
+* the command on linux is different
+
 # Ref
 https://blog.zengrong.net/post/2169.html
