@@ -5,8 +5,37 @@
 * Python 2.x will be EOS at 2020
 * Different version of linux server will have different version of python, to install specific version of python on linux, we need to `wget` and `build` it
 
+## Python implementation
+In theory, a python script could be run using any of the implementations, and the results of running the script should be the same
 
-https://stackoverflow.com/questions/21365714/nodejs-error-installing-with-npm
+* `CPython`
+  * The original Python implementation
+  * It is the implementation you download from Python.org
+  * It implemented in C
+* `JPython`
+  * Java implementation of python programming language
+
+![implementation](http://s5.51cto.com/wyfs01/M01/2F/E3/wKioOVJHlIHBzjRRAAA_qXZ3tcE572.jpg)
+
+### Why so many implementations
+It is easier to use Java library in JPython
+
+# REPL
+A read–eval–print loop (REPL), also termed an `interactive toplevel` or `language shell`, is a simple interactive computer programming environment that takes single user inputs, executes them, and returns the result to the user; a program written in a REPL environment is `executed piecewise`
+
+## ipython
+* A better version of interactive Python interpreter
+  * autocomplete
+  * run command (e.g., `%pwd`)
+  * see `history`
+* Need to install it first 
+  * `pip install ipython` 
+* GUI (notebook) support
+  * IPython and Jupyter are connected and related
+
+![autocomplete](img/autocomplete.png)
+![history](img/history.png)
+![pwd](img/pwd.png)
 
 # Virtual environment
 ```
