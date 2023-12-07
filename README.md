@@ -5,7 +5,7 @@
 * Python 2.x will be EOS at 2020
 * Different version of linux server will have different version of python, to install specific version of python on linux, we need to `wget` and `build` it
 
-## Python implementation
+## Python [implementation](https://wiki.python.org/moin/PythonImplementations)
 In theory, a python script could be run using any of the implementations, and the results of running the script should be the same
 
 * `CPython`
@@ -14,8 +14,6 @@ In theory, a python script could be run using any of the implementations, and th
   * It implemented in C
 * `JPython`
   * Java implementation of python programming language
-
-![implementation](http://s5.51cto.com/wyfs01/M01/2F/E3/wKioOVJHlIHBzjRRAAA_qXZ3tcE572.jpg)
 
 ### Why so many implementations
 It is easier to use Java library in JPython
